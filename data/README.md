@@ -3,4 +3,5 @@ The data is taken from the following sources:
 - `fb_friends_draw.csv`: The network data is taken from https://networks.skewed.de/net/copenhagen#fb_friends_draw
 - `proximity_data.csv`: The data is taken from Copenhagen Network Study. https://www.nature.com/articles/s41597-019-0325-x. The name of the students are randomly generated.
 - `airport_network`: The data is taken from Openflights.org. https://toreopsahl.com/datasets/#usairports and further preprocessed. See `airport_network/preprocess.py`.
-
+- `link-prediction-dataset`: This dataset is taken from a collaboration network of scientists.
+- `seventh_graders.csv`: This data is taken from https://networks.skewed.de/net/7th_graders.

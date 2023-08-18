@@ -1,0 +1,79 @@
+student_name,course_name,course_instructor,semester
+Alice,Math 101,Dr. Smith,Fall 2020
+Alice,English 101,Prof. Johnson,Fall 2020
+Alice,History 101,Dr. Lee,Spring 2021
+Bob,Math 101,Dr. Smith,Fall 2020
+Bob,Physics 101,Prof. Kim,Fall 2020
+Bob,Chemistry 101,Dr. Lee,Spring 2021
+Charlie,English 101,Prof. Johnson,Fall 2020
+Charlie,History 101,Dr. Lee,Spring 2021
+Charlie,Computer Science 101,Prof. Lee,Spring 2021
+David,Math 101,Dr. Smith,Fall 2020
+David,Physics 101,Prof. Kim,Fall 2020
+David,Chemistry 101,Dr. Lee,Spring 2021
+Eve,English 101,Prof. Johnson,Fall 2020
+Eve,History 101,Dr. Lee,Spring 2021
+Eve,Computer Science 101,Prof. Lee,Spring 2021
+Frank,Math 101,Dr. Smith,Fall 2020
+Frank,Physics 101,Prof. Kim,Fall 2020
+Frank,Chemistry 101,Dr. Lee,Spring 2021
+Grace,English 101,Prof. Johnson,Fall 2020
+Grace,History 101,Dr. Lee,Spring 2021
+Grace,Computer Science 101,Prof. Lee,Spring 2021
+Hannah,Math 101,Dr. Smith,Fall 2020
+Hannah,Physics 101,Prof. Kim,Fall 2020
+Hannah,Chemistry 101,Dr. Lee,Spring 2021
+Isaac,English 101,Prof. Johnson,Fall 2020
+Isaac,History 101,Dr. Lee,Spring 2021
+Isaac,Computer Science 101,Prof. Lee,Spring 2021
+Jane,Math 101,Dr. Smith,Fall 2020
+Jane,Physics 101,Prof. Kim,Fall 2020
+Jane,Chemistry 101,Dr. Lee,Spring 2021
+Kate,English 101,Prof. Johnson,Fall 2020
+Kate,History 101,Dr. Lee,Spring 2021
+Kate,Computer Science 101,Prof. Lee,Spring 2021
+Liam,Math 101,Dr. Smith,Fall 2020
+Liam,Physics 101,Prof. Kim,Fall 2020
+Liam,Chemistry 101,Dr. Lee,Spring 2021
+Mia,English 101,Prof. Johnson,Fall 2020
+Mia,History 101,Dr. Lee,Spring 2021
+Mia,Computer Science 101,Prof. Lee,Spring 2021
+Nate,Math 101,Dr. Smith,Fall 2020
+Nate,Physics 101,Prof. Kim,Fall 2020
+Nate,Chemistry 101,Dr. Lee,Spring 2021
+Olivia,English 101,Prof. Johnson,Fall 2020
+Olivia,History 101,Dr. Lee,Spring 2021
+Olivia,Computer Science 101,Prof. Lee,Spring 2021
+Peter,Math 101,Dr. Smith,Fall 2020
+Peter,Physics 101,Prof. Kim,Fall 2020
+Peter,Chemistry 101,Dr. Lee,Spring 2021
+Quinn,English 101,Prof. Johnson,Fall 2020
+Quinn,History 101,Dr. Lee,Spring 2021
+Quinn,Computer Science 101,Prof. Lee,Spring 2021
+Rachel,Math 101,Dr. Smith,Fall 2020
+Rachel,Physics 101,Prof. Kim,Fall 2020
+Rachel,Chemistry 101,Dr. Lee,Spring 2021
+Samantha,English 101,Prof. Johnson,Fall 2020
+Samantha,History 101,Dr. Lee,Spring 2021
+Samantha,Computer Science 101,Prof. Lee,Spring 2021
+Tom,Math 101,Dr. Smith,Fall 2020
+Tom,Physics 101,Prof. Kim,Fall 2020
+Tom,Chemistry 101,Dr. Lee,Spring 2021
+Uma,English 101,Prof. Johnson,Fall 2020
+Uma,History 101,Dr. Lee,Spring 2021
+Uma,Computer Science 101,Prof. Lee,Spring 2021
+Violet,Math 101,Dr. Smith,Fall 2020
+Violet,Physics 101,Prof. Kim,Fall 2020
+Violet,Chemistry 101,Dr. Lee,Spring 2021
+Wendy,English 101,Prof. Johnson,Fall 2020
+Wendy,History 101,Dr. Lee,Spring 2021
+Wendy,Computer Science 101,Prof. Lee,Spring 2021
+Xander,Math 101,Dr. Smith,Fall 2020
+Xander,Physics 101,Prof. Kim,Fall 2020
+Xander,Chemistry 101,Dr. Lee,Spring 2021
+Yara,English 101,Prof. Johnson,Fall 2020
+Yara,History 101,Dr. Lee,Spring 2021
+Yara,Computer Science 101,Prof. Lee,Spring 2021
+Zoe,Math 101,Dr. Smith,Fall 2020
+Zoe,Physics 101,Prof. Kim,Fall 2020
+Zoe,Chemistry 101,Dr. Lee,Spring 2021

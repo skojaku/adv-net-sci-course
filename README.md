@@ -13,8 +13,6 @@ By the end of the course, you are expected to be able to
 
 # About this course
 - **Instructor**: [Sadamori Kojaku](http://skojaku.github.io) 
-- **Relationships with SSIE 641 (Advanced Topics in Network Science)**: We split the course into two separate courses, an introductory course and a more advanced course with recent cutting-edge topics on the integration of AI/ML and network analysis. This course is the more advanced course.
-- **Announcements**: All announcements will be sent via Slack. 
 - **Syllabus**: You can download the syllabus [here](http://skojaku.github.io/doc/syllabus.pdf). @todo 
 
 ----

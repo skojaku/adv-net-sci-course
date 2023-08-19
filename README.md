@@ -13,6 +13,5 @@ By the end of the course, you are expected to be able to
 
 # About this course
 - **Instructor**: [Sadamori Kojaku](http://skojaku.github.io) 
-- **Syllabus**: You can download the syllabus [here](http://skojaku.github.io/doc/syllabus.pdf). @todo 
-
+- **Syllabus**: You can download the syllabus (from here)[https://skojaku.github.io/attachments/docs/advnetsci/syllabus.pdf]
 ----

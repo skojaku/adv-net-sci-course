@@ -4,15 +4,7 @@ Welcome to the world of networks! Networks are all around us, from the vast expa
 In recent years, we have witnessed remarkable advances in AI/ML, together with an ever-increasing volume and quality of data. Together, they offer an unprecedented opportunity to unlock the secrets of the world around us.
 This course is an introduction to network data analysis from bottom up: through the interactions with network data and tools, we will learn how to store, manipulate, compute, and leverage network data in practice, as well as their underlying theoretical foundations.
 
-## Course objectives
-By the end of the course, you are expected to be able to 
-- organize & manipulate basic types of network data,
-- analyze them using basic exploratory visualization techniques,
-- compute basic statistics about network data 
-- leverage network data for classification and prediction 
-
 # About this course
 - **Instructor**: [Sadamori Kojaku](http://skojaku.github.io) 
-- **Syllabus**: You can download the syllabus [here](http://skojaku.github.io/doc/syllabus.pdf). @todo 
-
+- **Syllabus**: You can download the syllabus [from here](https://skojaku.github.io/attachments/docs/advnetsci/syllabus.pdf)
 ----

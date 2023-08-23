@@ -436,6 +436,9 @@ What distinguishes networks from geometric representation and correlations?
 
 ---
 
+[Spurious Correlations](https://www.tylervigen.com/spurious-correlations)
+
+![bg width:80%](https://www.tylervigen.com/chart-pngs/2.png)
 
 ---
 
@@ -475,13 +478,15 @@ What distinguishes networks from geometric representation and correlations?
 
 # Reference (.cont)
 
-
 #### Feynman diagram
 - [Freeman Dyson and the Postdoc Cascade | Drawing Theories Apart: The Dispersion of Feynman Diagrams in Postwar Physics | Chicago Scholarship Online | Oxford Academic](https://academic.oup.com/chicago-scholarship-online/book/23068/chapter/183889084)
 - [Freeman Dyson - Linking the ideas of Feynman, Schwinger and Tomanaga (76/157) - YouTube](https://www.youtube.com/watch?v=i3RcN5UGwgI)
 - [Freeman Dyson - How difficult was it to understand Schwinger? (73/157) - YouTube](https://www.youtube.com/watch?v=UKbp85zpdcY)
 - [Freeman Dyson - Richard Feynman and his work (58/157) - YouTube](https://www.youtube.com/watch?v=pToteaNcIdk)
 
+---
 
+# Reference (.cont)
 #### Misc
-[Prestige drives epistemic inequality in the diffusion of scientific ideas | EPJ Data Science | Full Text](https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-018-0166-4)
+- [Prestige drives epistemic inequality in the diffusion of scientific ideas | EPJ Data Science | Full Text](https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-018-0166-4)
+- [Spurious Correlations](https://www.tylervigen.com/spurious-correlations)

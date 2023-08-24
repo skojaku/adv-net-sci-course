@@ -226,6 +226,12 @@ All rights reserved.  No part of the course materials used in the instruction of
 
 ---
 
+## <center style="margin-top:-5%;">...and some fun networks</center>
+
+![bg 80%](https://magazine.atnavi.net/wp-content/uploads/2021/01/sub14-1.jpg)
+
+---
+
 # <center>Key strength of network representation?</center>
 
 ---
@@ -429,9 +435,10 @@ What distinguishes networks from geometric representation and correlations?
 
 ---
 
-# <center>Discussion</center>
+# Discussion
 What distinguishes networks from geometric representation and correlations?
 - **Discrete relationship**: Represent binary relationships.
+- **Specificity**: Can describe specific type of relationships between a particular pair of nodes.
 - **Independence**: Often presume that dyadic relationships are independent of each other.
 
 ---

@@ -1,0 +1,18 @@
+
+--extra-index-url https://download.pytorch.org/whl/cpu torchaudio
+--extra-index-url https://download.pytorch.org/whl/cpu torch
+--extra-index-url https://download.pytorch.org/whl/cpu torchvision 
+scikit-learn
+numpy
+numba
+scipy
+pandas
+polars
+networkx
+seaborn
+matplotlib
+gensim
+ipykernel
+tqdm
+faiss-cpu
+black

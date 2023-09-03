@@ -1,0 +1,30 @@
+name: advnetsci
+channels:
+  - defaults
+  - conda-forge 
+  - pytorch
+dependencies:
+  - python=3.9
+  - mamba
+  - snakemake
+  - ca-certificates
+  - certifi
+  - openssl
+  - torchaudio
+  - pytorch::pytorch
+  - torchvision
+  - graph-tool
+  - scikit-learn
+  - numpy
+  - numba
+  - scipy
+  - pandas
+  - polars
+  - networkx
+  - seaborn
+  - matplotlib
+  - gensim
+  - ipykernel
+  - tqdm
+  - black
+  - faiss

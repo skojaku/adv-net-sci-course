@@ -16,8 +16,4 @@ ipykernel
 tqdm
 faiss-cpu
 black
-pyg-lib==0.2.0+pt20cpu
-torch-cluster==1.6.1+pt20cpu
-torch-scatter==2.1.1+pt20cpu
-torch-sparse==0.6.17+pt20cpu
-torch-spline-conv==1.2.2+pt20cpu
+torch_geometric

@@ -24,7 +24,9 @@
 				"python.defaultInterpreterPath": "/home/vscode/venv/bin/python",
 				"python.linting.enabled": true,
 				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-				"python.linting.flake8Enabled": true
+				"python.linting.flake8Enabled": true,
+        			"editor.formatOnSave": true,
+        			"editor.formatOnType": true
 			},
 
 			// Add the IDs of extensions you want installed when the container is created.
@@ -32,6 +34,10 @@
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
+        "ms-toolsai.jupyter",
+        "ms-python.black-formatter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "analytic-signal.preview-pdf",
 			]
 		}
 	},
@@ -48,6 +54,6 @@
 	"features": {
 		"azure-cli": "latest",
 		"ghcr.io/devcontainers-contrib/features/black:2": {},
-		"ghcr.io/guiyomh/features/vim:0": {}
+		"ghcr.io/guiyomh/features/vim:0": {},
 	}
 }

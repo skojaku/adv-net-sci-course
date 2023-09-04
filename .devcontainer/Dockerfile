@@ -8,6 +8,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 ARG VENV_PATH="/home/vscode/venv"
 
 RUN echo "deb http://downloads.skewed.de/apt jammy main" >> /etc/apt/sources.list
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 612DEFB798507F25
 RUN apt-get update && apt-get install python3-graph-tool
 
 COPY requirements.txt /tmp/pip-tmp/

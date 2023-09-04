@@ -15,8 +15,8 @@ RUN su vscode -c "python -m venv /home/vscode/venv" \
 
 
 RUN echo "deb http://downloads.skewed.de/apt bullseye main" >> /etc/apt/sources.list
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 612DEFB798507F25
-RUN apt-get update && apt-get install -y python3-graph-tool python3-cairo python3-matplotlib 
+RUN su vscode -c "apt-key adv --keyserver keyserver.ubuntu.com --recv-key 612DEFB798507F25"
+RUN apt-get update && su vscode -c "apt-get install -y python3-graph-tool python3-cairo python3-matplotlib" 
 
 
 # Define the path to the virtualenv to work with

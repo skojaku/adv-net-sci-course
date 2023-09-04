@@ -9,7 +9,7 @@ ARG VENV_PATH="/home/vscode/venv"
 
 RUN echo "deb http://downloads.skewed.de/apt jammy main" >> /etc/apt/sources.list
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 612DEFB798507F25
-RUN apt-get update && apt-get install python3-graph-tool
+RUN apt-get update && apt-get install python3-graph-tool python3-gi python3-gi-cairo 
 
 COPY requirements.txt /tmp/pip-tmp/
 RUN su vscode -c "python -m venv /home/vscode/venv" \

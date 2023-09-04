@@ -43,11 +43,7 @@
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-	"postCreateCommand": [
-		"source /home/vscode/venv/bin/activate",
-		"export PYTHONPATH='/usr/lib/python3/dist-packages'",
-		"ln -s /usr/lib/python3/dist-packages/graph_tool /home/vscode/venv/lib/python3.9/site-packages/graph_tool"
-	],
+	"postCreateCommand": "source /home/vscode/venv/bin/activate",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {

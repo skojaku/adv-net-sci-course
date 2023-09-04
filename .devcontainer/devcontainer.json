@@ -14,7 +14,6 @@
 			"NODE_VERSION": "none"
 		}
 	},
-
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -25,30 +24,30 @@
 				"python.linting.enabled": true,
 				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
 				"python.linting.flake8Enabled": true,
-        			"editor.formatOnSave": true,
-        			"editor.formatOnType": true
+				"editor.formatOnSave": true,
+				"editor.formatOnType": true
 			},
-
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
-        			"ms-toolsai.jupyter",
-        			"ms-python.black-formatter",
-        			"ms-toolsai.vscode-jupyter-cell-tags",
-        			"analytic-signal.preview-pdf",
+				"ms-toolsai.jupyter",
+				"ms-python.black-formatter",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"analytic-signal.preview-pdf",
 			]
 		}
 	},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-	"postCreateCommand": "source /home/vscode/venv/bin/activate",
-
+	"postCreateCommand": [
+		"source /home/vscode/venv/bin/activate",
+		"export PYTHONPATH='/usr/lib/python3/dist-packages'",
+		"ln -s /usr/lib/python3/dist-packages/graph_tool /home/vscode/venv/lib/python3.9/site-packages/graph_tool"
+	],
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {

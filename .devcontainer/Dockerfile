@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 # Define the path to the virtualenv to work with
 ARG VENV_PATH="/home/vscode/venv"
 
-RUN echo "deb http://downloads.skewed.de/apt jummy main" >> /etc/apt/sources.list
+RUN echo "deb http://downloads.skewed.de/apt jammy main" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install python3-graph-tool
 
 COPY requirements.txt /tmp/pip-tmp/

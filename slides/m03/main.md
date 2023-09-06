@@ -10,22 +10,33 @@ style: |
   .vindent {
     margin-top: 15%;
   }
----
-<style> /* this works for export */ @import url("/Users/skojaku-admin/Documents/projects/teaching/adv-net-sci/adv-net-sci-course/slides/m03/marp-style.css" ); /* this works in preview */ @import url( "marp-style.css" );
-</style>
-
-<style>
+  .red {
+    color: #c44f51
+  }
+  .blue {
+    color: #4c72b0
+  }
+  section {
+    font-size: 28px;
+  }
   .container {
     display:flex;
   }
   .col {
     flex: 1
   }
+---
+
+<style> /* this works for export */ @import url("/Users/skojaku-admin/Documents/projects/teaching/adv-net-sci/adv-net-sci-course/slides/m03/marp-style.css" ); /* this works in preview */ @import url( "marp-style.css" );
+</style>
+
+<style>
 </style>
 
 # Quiz
 
 ---
+
 
 <div style="font-size:20pt;margin-top:-5%">
 
@@ -242,6 +253,22 @@ All rights reserved.  No part of the course materials used in the instruction of
 
 ---
 
+### <center> Github codespaces </center>
+
+
+<center>
+
+https://github.com/skojaku/adv-net-sci-course
+
+![width:800px](https://github.blog/wp-content/uploads/2021/08/1200x630-codespaces-social.png?fit=1200%2C630)
+
+</center>
+
+---
+
+# <center style="margin-top:30%">Data normalization</center>
+
+---
 
 # <center>Data normalization</center>
 
@@ -511,31 +538,223 @@ contact_data_table = pd.read_csv(
   - e.g., consider two people having a friendship tie if they hang out together frequently.
   - *Most networks are this type*.
 
-Let's focus on the indirect measurement of edges.
+Let's focus on the indirect measurement of edges through an example of Davis Sourthen Club Women
 
 ---
 
-### Affiliation network
+<div class="container">
+<div class="col" style="flex:2;margin-right:40px">
 
-- Consisting of nodes and their affiliations
-- Bipartite network
+- A social anthropological study by Davis et al. published in 1941.
+- Documenting how race shaped nearly every aspect of life in US through a study of a rural Mississippi community
+
+![width:360px](https://www.researchgate.net/publication/266465594/figure/fig8/AS:669483421167649@1536628694910/Daviss-Southern-Club-Women.ppm)
+
+</div>
+<div class="col" style="flex:1">
+
+![width:320px](https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/02/26/81/9780226817989.jpg/jcr:content/9780226817989.jpg)
+
+
+</div>
+</div>
+
+
 
 
 ---
 
-Social network of a university karate club.
+<div style="font-size:32px">
 
-"An Information Flow Model for Conflict and Fission in Small Groups" by Wayne Zachary.
+- Observed attendance at 14 social events by 18 Southern women.
+- <p class="red">No direct measurements of social ties between the women</p>
+- Can make a reasonable inference about social ties 🤔?
 
+</div>
 
-
-![bg right:50% 100%](https://www.researchgate.net/publication/236902276/figure/fig2/AS:669252700889094@1536573686332/Zacharys-Karate-Club-network-Colors-and-shapes-show-real-fission-of-the-club.png)
+![bg width:100% left:45%](https://www.researchgate.net/publication/266465594/figure/fig8/AS:669483421167649@1536628694910/Daviss-Southern-Club-Women.ppm)
 
 
 
 ---
 
-# Bipartite network
+### Represent the data as a *bipartite network*
+
+<div class="container">
+<div class="col" style="flex:0.2">
+
+<center style="margin-top:40%">
+
+![width:300px left:30%](https://www.researchgate.net/publication/266465594/figure/fig8/AS:669483421167649@1536628694910/Daviss-Southern-Club-Women.ppm)
+
+</center>
+
+</div>
+<div class="col" style="flex:.2">
+
+<center style="margin-top:180px;font-size:80px;margin-right:30px;margin-left:30px;">
+▶️
+</center>
+
+</div>
+<div class="col" style="flex:1.5">
+
+<center style="margin-top:15%">
+
+![width:400px](https://www.wolframcloud.com/obj/resourcesystem/images/ffb/ffb73f7f-a130-45ac-a0a2-d3332adb1730/4cc0b0dc1f1f1491.png)
+
+</center>
+
+
+</div>
+</div>
+
+<center>
+
+*Bipartite network = a network consisting of two different types of nodes.*
+</center>
+
+---
+
+
+### One mode projection
+
+<div class="container">
+
+<div class="col" style="flex:1">
+
+<div style="margin-top:120px">
+
+
+![ width:400px](https://toreopsahl.files.wordpress.com/2011/06/fig1_projection.png)
+
+Place an edge between two women (blue) if they participated in the same event (orange).
+
+</div>
+
+</div>
+<div class="col" style="flex:1;margin-left:90px">
+
+![width:350px](https://toreopsahl.files.wordpress.com/2009/04/fig1_twomode_half.png)
+![width:350px](https://toreopsahl.files.wordpress.com/2009/04/fig1_twomode_simple.png?w=271&zoom=2)
+
+
+
+</div>
+</div>
+
+---
+
+### One bipartite network, two projections
+
+<center style="margin-top:20%">
+
+![bg width:70%](https://www.researchgate.net/publication/289568810/figure/fig1/AS:340182604763137@1458117261584/a-User-item-bipartite-graph-b-users-one-mode-projection-graph-c-items-one-mode.png)
+
+</center>
+
+---
+
+<center style = "margin-top:50%">
+
+The Southern women network constructed by a one-mode projection.
+
+[Davis Club — NetworkX 3.1 documentation](https://networkx.org/documentation/stable/auto_examples/algorithms/plot_davis_club.html)
+
+</center>
+
+![bg width:100% right:50%](https://networkx.org/documentation/stable/_images/sphx_glr_plot_davis_club_001.png)
+
+
+---
+
+<center>
+
+# Most networks are generated by one mode projection!
+
+...and thus the connections are inferential.
+
+</center>
+
+---
+
+Created by a one-mode projection of flavor-recipe bipartite network.
+
+![bg 75%](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fsrep00196/MediaObjects/41598_2011_Article_BFsrep00196_Fig2_HTML.jpg)
+
+---
+
+Created by a one-mode projection of actor-movie bipartite network.
+
+![bg 80%](https://leadersayswhat.com/wp-content/uploads/2015/05/kevin-bacon-7656918.png)
+
+---
+
+<center style="margin-top:25%">
+
+# Any other networks generated by one-mode projection?
+
+</center>
+
+---
+
+<center style="margin-top:25%">
+
+# Any other networks generated by one-mode projection?
+
+Affiliation networks, coauthorship networks, human disease networks, word networks, co-purchased product networks, ...
+
+</center>
+
+
+
+---
+
+### Discussion
+
+Translate the one-mode projection into a matrix operation.
+  - Imagine a bipartite network consisting of $N_X$ nodes of mode $X$ (e.g., women) and $N_Y$ nodes of mode $Y$ (e.g., events).
+  - Denoted by $B$ the $N_X\times N_Y$ adjacency matrix of the bipartite network, where $B_{xy}=1$ if nodes $x$ in mode $X$ and $y$ in mode $Y$ are connected. Otherwise, $B_{xy}=0$
+  - Express the adjacency matrix $A_X$ of the network projected on $X$ using $B$. Self-loops are allowed.
+  - Express $A_Y$ of the network projected on $Y$ by using $B$.
+
+<div class="container">
+<div class="col" style="flex:1;font-size:22px">
+
+Hint: Consider a small bipartite network. Write $B$ and $A$. Think about how to compute $A_{ij}$ with $B_{xy}$. Then translate it into a matrix operation.
+
+</div>
+<div class="col" style="flex:1">
+
+![ width:250px](https://toreopsahl.files.wordpress.com/2011/06/fig1_projection.png)
+
+</div>
+</div>
+
+---
+
+---
+
+$$
+(A_{X})_{ij} = \sum_{y} B_{ik} B_{jy}
+$$
+
+$$
+(A_{Y})_{ij} = \sum_{x} B_{xi} B_{yj}
+$$
+
+<center> or alternatively, </center>
+
+$$
+A_X = B \times B^\top
+$$
+
+$$
+A_Y = B \times B^\top
+$$
+
+---
+
 
 ---
 

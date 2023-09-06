@@ -17,3 +17,4 @@ tqdm
 faiss-cpu
 black
 torch_geometric
+nbconvert

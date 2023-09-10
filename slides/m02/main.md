@@ -788,7 +788,7 @@ $\{\underbrace{\text{key}}_{\text{row ID}}: \underbrace{\text{values}}_{\substac
 
 ```markdown
 {
-  0:[1],
+  0:[10],
   1:[2,10],
   2:[1,3,10],
   3:[2,4,5,6],

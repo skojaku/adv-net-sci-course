@@ -18,6 +18,7 @@ RUN echo "deb http://downloads.skewed.de/apt bullseye main" >> /etc/apt/sources.
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 612DEFB798507F25
 RUN apt-get update && apt-get install -y python3-graph-tool python3-cairo python3-matplotlib
 
+RUN ln -s /usr/lib/python3/dist-packages/graph_tool /home/vscode/venv/lib/python3.9/site-packages/graph_tool
 
 # Define the path to the virtualenv to work with
 #ARG VENV_PATH="/home/vscode/venv"

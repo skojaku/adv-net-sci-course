@@ -538,7 +538,7 @@ contact_data_table = pd.read_csv(
   - e.g., consider two people having a friendship tie if they hang out together frequently.
   - *Most networks are this type*.
 
-Let's focus on the indirect measurement of edges through an example of Davis Sourthen Club Women
+Let's focus on the indirect measurement of edges through an example of Davis Sourthern Club Women
 
 ---
 
@@ -736,11 +736,11 @@ Hint: Consider a small bipartite network. Write $B$ and $A$. Think about how to 
 ---
 
 $$
-(A_{X})_{ij} = \sum_{y} B_{ik} B_{jy}
+(A_{X})_{ij} = \sum_{y} B_{iy} B_{jy}
 $$
 
 $$
-(A_{Y})_{ij} = \sum_{x} B_{xi} B_{yj}
+(A_{Y})_{ij} = \sum_{x} B_{xi} B_{xj}
 $$
 
 <center> or alternatively, </center>
@@ -750,26 +750,130 @@ A_X = B \times B^\top
 $$
 
 $$
-A_Y = B \times B^\top
-$$
+A_Y = B^\top \times B$$
 
 ---
 
+<center class="vindent">
+
+# How networks can fool us
+
+or how we misinterpret them.
+
+</center>
 
 ---
+
+<center>
+
+# Is obesity contagious?
+
+
+[The Spread of Obesity in a Large Social Network over 32 Years | NEJM](https://www.nejm.org/doi/full/10.1056/nejmsa066082)
+
+![width:500px](https://www.nejm.org/na101/home/literatum/publisher/mms/journals/content/nejm/2007/nejm_2007.357.issue-4/nejmsa066082/20190517/images/img_small/nejmsa066082_f1.jpeg)
+
+</center>
+
+---
+
+##### Smoking habits, happiness, and loneliness are also contagious!
+
+- [Dynamic spread of happiness in a large social network: longitudinal analysis over 20 years in the Framingham Heart Study | The BMJ](https://www.bmj.com/content/337/bmj.a2338)
+- [The Collective Dynamics of Smoking in a Large Social Network | NEJM](https://www.nejm.org/doi/10.1056/NEJMsa0706154?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200www.ncbi.nlm.nih.gov)
+- [Alone in the Crowd: The Structure and Spread of Loneliness in a Large Social Network - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2792572/)
+
+---
+
+##### Smoking habits, happiness, and loneliness are also contagious!
+
+- [Dynamic spread of happiness in a large social network: longitudinal analysis over 20 years in the Framingham Heart Study | The BMJ](https://www.bmj.com/content/337/bmj.a2338)
+- [The Collective Dynamics of Smoking in a Large Social Network | NEJM](https://www.nejm.org/doi/10.1056/NEJMsa0706154?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200www.ncbi.nlm.nih.gov)
+- [Alone in the Crowd: The Structure and Spread of Loneliness in a Large Social Network - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2792572/)
+
+<center>
+
+### Discussion
+
+What are other explanations of these phenomena 🤔?
+
+</center>
+
+
+---
+
+# Contagion vs Homophily
+
+
+- **Homophily**
+People with similar attributes tend to be connected with each other.
+
+
+- **Contagion**
+People change their attributes due to the connections to others people
+
+
+## Homophily is about correlation.
+## Contagion is about causation.
+
+---
+
+Homophily does not imply contagion:
+
+- [Homophily and Contagion Are Generically Confounded in Observational Social Network Studies - Cosma Rohilla Shalizi, Andrew C. Thomas, 2011](https://journals.sagepub.com/doi/abs/10.1177/0049124111404820)
+- [[1007.2876] The Spread of Evidence-Poor Medicine via Flawed Social-Network Analysis](https://arxiv.org/abs/1007.2876)
+- [Homophily and Influence in Social Networks](http://bactra.org/notebooks/homophily-vs-influence.html)
+
+---
+
+### Google Page Rank
+
+![bg width:100% right:35%](https://miro.medium.com/v2/resize:fit:1400/1*Ppnv5uEDcYhzJbZa3AHcPg.png)
+
+#### How it works
+- Simulate random surfers who select hyperlinks in a page randomly
+- Count the number of times a page is visited by the surfer.
+
+#### Key idea
+An important website should be at the center of the Web.
+
+#### Discussion
+Does PageRank always identify important webs? If not, why?
+
+---
+
+## Google Page Rank suffers from the friendship paradox
+
+- [[cs/0511016] How to make the top ten: Approximating PageRank from in-degree](https://arxiv.org/abs/cs/0511016)
+
+- Website with many incoming links tend to have a high PageRank
+- The in-coming link can be from any websites, and you can create many websites linking each other, to inflate PageRank.
+
+
+---
+
 
 # Reference
 
+## Data integrity
+- [An alarming number of scientific papers contain Excel errors - The Washington Post](https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?postshare=4161472211255740)
+- [When Spreadsheets Attack! - YouTube](https://www.youtube.com/watch?v=yb2zkxHDfUE&t=1s)
+[The Reinhart-Rogoff error – or how not to Excel at economics](https://theconversation.com/the-reinhart-rogoff-error-or-how-not-to-excel-at-economics-13646)
+- [Documentation Is Automation | June 2018 | Communications of the ACM](https://cacm.acm.org/magazines/2018/6/228040-documentation-is-automation/abstract)
 
-### Friendship paradox
-- [The Friendship Paradox - YouTube](https://www.youtube.com/watch?v=httLvVufAYs)
-- [The friendship paradox! - YouTube](https://www.youtube.com/watch?v=sF1wy6OkeLE)
-- [Generalized friendship paradox in complex networks: The case of scientific collaboration | Scientific Reports](https://www.nature.com/articles/srep04603)
 
 ---
 
-### Operationalizing "social connections."
+## One-mode projection
+- [[0707.0540] How to project a bipartite network?](https://arxiv.org/abs/0707.0540)
+- [[1607.02481] Inferring monopartite projections of bipartite networks: an entropy-based approach](https://arxiv.org/abs/1607.02481)
+- [Projection | Tore Opsahl](https://toreopsahl.com/tnet/two-mode-networks/projection/)
 
-- [SocioPatterns.org](http://www.sociopatterns.org/)
-- [realitycommons.media.mit.edu/realitymining.html](http://realitycommons.media.mit.edu/realitymining.html)
+---
 
+## Contagion vs Homophily
+- [The Spread of Obesity in a Large Social Network over 32 Years | NEJM](https://www.nejm.org/doi/full/10.1056/nejmsa066082)
+- [Homophily and Contagion Are Generically Confounded in Observational Social Network Studies - Cosma Rohilla Shalizi, Andrew C. Thomas, 2011](https://journals.sagepub.com/doi/abs/10.1177/0049124111404820)
+- [[1007.2876] The Spread of Evidence-Poor Medicine via Flawed Social-Network Analysis](https://arxiv.org/abs/1007.2876)
+- [Homophily and Influence in Social Networks](http://bactra.org/notebooks/homophily-vs-influence.html)
+- [YYiki: Homophily and influence](https://yyiki.org/wiki/Homophily%20and%20influence/)

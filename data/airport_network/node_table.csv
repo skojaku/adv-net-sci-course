@@ -1,4 +1,4 @@
-id,Airport ID,Name,City,Country,IATA/FAA,ICAO,Latitude,Longitude,Altitude,Timezone,DST,alpha-2_x,alpha-3,name,alpha-2_y,country-code,iso_3166-2,region,sub-region,intermediate-region,region-code,sub-region-code,intermediate-region-code,deg
+node_id,Airport ID,Name,City,Country,IATA/FAA,ICAO,Latitude,Longitude,Altitude,Timezone,DST,alpha-2_x,alpha-3,name,alpha-2_y,country-code,iso_3166-2,region,sub-region,intermediate-region,region-code,sub-region-code,intermediate-region-code,deg
 0,1,Goroka,Goroka,Papua New Guinea,GKA,AYGA,-6.081689,145.391881,5282,10.0,U,PG,PNG,Papua New Guinea,PG,598.0,ISO 3166-2:PG,Oceania,Melanesia,,9.0,54.0,,1
 1,2,Madang,Madang,Papua New Guinea,MAG,AYMD,-5.207083,145.7887,20,10.0,U,PG,PNG,Papua New Guinea,PG,598.0,ISO 3166-2:PG,Oceania,Melanesia,,9.0,54.0,,6
 2,3,Mount Hagen,Mount Hagen,Papua New Guinea,HGU,AYMH,-5.826789,144.295861,5388,10.0,U,PG,PNG,Papua New Guinea,PG,598.0,ISO 3166-2:PG,Oceania,Melanesia,,9.0,54.0,,7

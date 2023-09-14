@@ -1,9 +1,7 @@
 # About this dataset 
 
-This is a worldwide airport network, in which two airports are connected if there is at least one scheduled commercial flight between them. The source data is taken from 
+This dataset represents a global airport network, where two airports are considered connected if there is at least one scheduled commercial flight between them. The data source for this dataset can be found at
 
-  [http://opsahl.co.uk/tnet/datasets/openflights.txt](https://openflights.org/data.html)
-
-The network is compiled as two tables, node_table.csv and edge_table.csv. The node_table.csv contains the airport IDs together with the aiports' attributes taken from the original data (see the original data about the metadata). 
-The edge table.csv contains the pairs of the IDs of airports that are directly connected.
-
+  https://openflights.org/data.html
+  
+The dataset is organized into two tables: node_table.csv and edge_table.csv. The node_table.csv contains the airport IDs along with their respective attributes, which are derived from the original data (please refer to the original data for more information on the metadata). The edge_table.csv contains pairs of airport IDs that are directly connected in the network.

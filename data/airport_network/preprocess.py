@@ -55,6 +55,9 @@ def load_airport_net():
 
 net, labels, node_table = load_airport_net()
 src, trg, _ = sparse.find(net)
+src_trg = np.maximum(src, trg) + 1j * np.minimum(src, trg)
+src_trg = np.unique(src_trg)
+src, trg = np.real(src_trg).astype(int), np.imag(src_trg).astype(int)
 edge_table = pd.DataFrame({"src": src, "trg": trg}).to_csv(
     "edge_table.csv", index=False
 )

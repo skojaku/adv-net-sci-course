@@ -1,3 +1,4 @@
+# %%
 import pandas as pd
 import numpy as np
 from scipy import sparse
@@ -54,6 +55,7 @@ def load_airport_net():
 
 
 net, labels, node_table = load_airport_net()
+node_table["id"] = np.arange(node_table.shape[0], dtype=int)
 src, trg, _ = sparse.find(net)
 src_trg = np.maximum(src, trg) + 1j * np.minimum(src, trg)
 src_trg = np.unique(src_trg)
@@ -61,4 +63,8 @@ src, trg = np.real(src_trg).astype(int), np.imag(src_trg).astype(int)
 edge_table = pd.DataFrame({"src": src, "trg": trg}).to_csv(
     "edge_table.csv", index=False
 )
-node_table.to_csv("node_table.csv", index=False)
+node_table.drop(columns=["deg"]).rename(columns={"id": "node_id"}).to_csv(
+    "node_table.csv", index=False
+)
+
+# %%

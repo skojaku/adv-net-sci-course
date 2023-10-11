@@ -1,0 +1,55 @@
+.img-tr {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    max-width:50%;
+    max-height: 40%
+}
+.img-br {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    max-width:50%;
+    max-height: 40%
+}
+
+ul {
+    font-size: 90%
+}
+
+
+section.split {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+        "slideheading slideheading"
+        "leftpanel rightpanel";
+}
+/* debug */
+section.split h3, 
+section.split .ldiv, 
+section.split .rdiv { border: 1.5pt dashed dimgray; }
+section.split h3 {
+    padding-top: 1px;
+    grid-area: slideheading;
+    font-size: 50px;
+}
+section.split .ldiv { grid-area: leftpanel; }
+section.split .rdiv { grid-area: rightpanel; }
+
+/* Figures */
+
+figure {
+    display: inline-block;
+    /* border: 1px dotted gray; */
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    /* border: 1px dotted blue; */
+    text-align: center;
+}
